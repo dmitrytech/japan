@@ -1,0 +1,52 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 								{ margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 				{ display:block; }
+body 													{ line-height:1; }
+ol, ul 													{ list-style:none; }
+blockquote, q 											{ quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after	{ content:''; content:none; }
+table 													{ border-collapse:collapse; border-spacing:0; }
+a														{ text-decoration:none; }
+/* Body */
+body	{ min-width:1280px; font-family:'Open Sans', sans-serif; font-size:14px; color:#fff; background-color:#000; }
+
+/* Header */
+header						{ width:70%; float:right; font-size:0.9em; padding-right:30px; }
+header option, header a		{ color:#aaa; }
+header .tools				{ width:35%; float:left; padding-top:8px; }
+header .panel				{ width:65%; height:35px; border:1px solid #535657; color:#bdbdbd; float:right; background-color:#34383b; }
+/* Header -> Tools */
+
+.language, .liveChat, .status							{ width:25%; float:left; text-align:center; position:relative; }
+.wifi, .volume											{ width:12.5%; float:left; }
+.language:after 										{ right:15%; top:35%; font-family:"FontAwesome"; font-size:0.6em; color:#aaa; content:"\f078"; position:absolute; }
+.language .languageSelector, .languageSelector option	{ border:none; color:#aaa; background-color:#000; font-family:'Open Sans', sans-serif; padding:0; outline:none; border:none; }
+.liveChat, .status, .wifi, .volume						{ padding-top:4px; }
+
+/* Header -> Tools */
+.userName, .balance, .mail, .platinum, .deposit			{ line-height:2.7em; float:left; display:block; padding-left:5%; } 
+.platinum												{ font-size:1.2em; line-height:2em; }
+.mail .count											{ padding-left:5px; }
+.deposit button											{ border:none; font-size:1.2em; padding:0 30%; line-height:1.4em; outline:none; border:none; text-decoration:none; background:#fcf8b3; }
+.deposit button:hover									{ text-decoration:none; background:#fff069; }
+
+
+header .panel {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
